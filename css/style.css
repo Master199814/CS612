@@ -1,0 +1,65 @@
+
+header
+{
+    background-image:url(/images/pexels-artem-saranin-1496372.jpg);
+}
+
+/* media query */
+@media screen and (min-width:600px)
+{
+    header,footer{
+        width:99%;
+        height:15vh;
+        text-align: center;
+    }
+    nav,aside
+    {
+        display: inline-block;
+        text-align: center;
+        height: 66vh;
+        width:18%;
+    }
+    main{
+        display: inline-block;
+        text-align: center;
+        height: 66vh;
+        width:60%;
+        
+    }
+
+    .flex-container{
+        display:flex;
+        flex-direction: row;
+        align-content: baseline;
+        justify-content: space-around;
+        margin: 2px;
+    }
+    video
+    {
+        width: 100%;
+    }
+    input{
+        margin:5px;
+    }
+    a{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    nav,aside{
+        vertical-align: top;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+  header,.flex-container,footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  video{
+    width: 80%;
+
+  }
+}
